@@ -21,20 +21,4 @@ public class MarkdownParseTest {
         System.out.println(List.of("https://something.com", "some-page.html").toString());
         assertEquals(List.of("https://something.com", "some-page.html"), MarkdownParse.getLinks(Files.readString(Path.of("test-file.md"))));
     }
-
-    // @Test
-    // public void links() {
-    //     ArrayList<String> links = getLinks("test-file.md");
-    //     ArrayList<String> expect = new ArrayList<>();
-    //     expect.add("https://something.com");
-    //     expect.add("some-page.html");
-    //     assertEquals(expect, links);
-    // }
-
-    // @Test
-    // public void links2() {
-    //     ArrayList<String> links = getLinks("test-file2.md");
-    //     ArrayList<String> expect = new ArrayList<>();
-    //     assertEquals(expect, links);
-    // }
 }
